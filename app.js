@@ -11,13 +11,13 @@ config();
 const app = express();
 
 app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://d505-103-225-244-6.ngrok-free.app",
-    ],
-  })
-  // cors()
+  // cors({
+  //   origin: [
+  //     "http://localhost:5173",
+  //     "https://d505-103-225-244-6.ngrok-free.app",
+  //   ],
+  // })
+  cors()
 );
 
 app.use(express.json());
